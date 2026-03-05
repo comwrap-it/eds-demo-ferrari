@@ -17,6 +17,10 @@ body {
     overflow-x: clip;
 }
 
+strong {
+    font-family: 'Body-Font';
+}
+
 .default-content-wrapper ul {
     align-items: center;
 }
@@ -26,10 +30,10 @@ body {
 }
 
 .default-content-wrapper {
-    padding: 96px 48px;
-    max-width: calc(800px + 48px * 2);
+    padding: 96px 48px !important;
+    max-width: calc(800px + 48px * 2) !important;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto !important;
     background-color: white;
 }
 
@@ -39,8 +43,8 @@ body {
     font-stretch: normal;
     font-style: normal;
     font-weight: 400;
-    src: url("../../../etc.clientlibs/ferrari-fcom/clientlibs/clientlib-site/resources/fonts/Ferrari-SansRegular.woff2?v=1") format("woff2"),
-         url("../../../etc.clientlibs/ferrari-fcom/clientlibs/clientlib-site/resources/fonts/Ferrari-SansRegular.woff?v=1") format("woff");
+    src: url("/fonts/Ferrari-SansRegular.woff2?v=1") format("woff2"),
+         url("/fonts/Ferrari-SansRegular.woff?v=1") format("woff");
 }
 
 @font-face {
