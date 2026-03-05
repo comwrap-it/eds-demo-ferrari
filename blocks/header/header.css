@@ -44,6 +44,7 @@ header nav[aria-expanded='true'] {
     gap: 0 32px;
     max-width: 1264px;
     padding: 0 24px;
+    height: min-content;
   }
 
   header nav[aria-expanded='true'] {
@@ -229,6 +230,7 @@ header nav .nav-sections ul > li > ul > li {
     display: flex;
     gap: 48px;
     margin: 0;
+    align-items: center;
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li {
@@ -285,6 +287,7 @@ header nav .nav-sections .default-content-wrapper > ul > li {
     font-size: 12px;
     line-height: 1.27em;
     text-transform: uppercase;
+    height: min-content;
 }
 
 header nav .nav-sections .default-content-wrapper > ul > li:nth-of-type(2)::after {
