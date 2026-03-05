@@ -1,3 +1,7 @@
+:root {
+    --f-ferrari-font: "FerrariSans";
+}
+
 body,
 html {
     margin: 0;
@@ -23,7 +27,7 @@ body {
 
 .default-content-wrapper {
     padding: 96px 48px;
-    max-width: calc(800px + var(48px) * 2);
+    max-width: calc(800px + 48px * 2);
     width: 100%;
     margin: 0 auto;
     background-color: white;
