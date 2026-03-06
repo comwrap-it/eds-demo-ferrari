@@ -18,7 +18,7 @@ body {
 }
 
 strong {
-    font-family: 'Body-Font';
+    font-family: Body-Font, sans-serif;
 }
 
 .default-content-wrapper ul {
@@ -30,7 +30,7 @@ strong {
 }
 
 .default-content-wrapper {
-    padding: 96px 0px !important;
+    padding: 96px 0 !important;
     max-width: calc(800px + 48px * 2) !important;
     width: 100%;
     margin: 0 auto !important;
@@ -48,13 +48,13 @@ h1 {
 }
 
 .nav-sections .default-content-wrapper {
-    padding: 0px 0px !important;
+    padding: 0 !important;
 }
 
 .title {
     width: 100%;
     max-width: calc(800px + 48px * 2);
-    margin: 0px auto;
+    margin: 0 auto;
 }
 
 .date.block {
