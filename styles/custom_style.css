@@ -30,12 +30,55 @@ strong {
 }
 
 .default-content-wrapper {
-    padding: 96px 48px !important;
+    padding: 96px 0px !important;
     max-width: calc(800px + 48px * 2) !important;
     width: 100%;
     margin: 0 auto !important;
-    background-color: white;
 }
+
+.date-wrapper {
+    max-width: calc(800px + 48px * 2) !important;
+    width: 100%;
+    margin: 0 auto !important;
+}
+
+h1 {
+    margin: 0;
+    letter-spacing: 4px;
+}
+
+.nav-sections .default-content-wrapper {
+    padding: 0px 0px !important;
+}
+
+.title {
+    width: 100%;
+    max-width: calc(800px + 48px * 2);
+    margin: 0px auto;
+}
+
+.date.block {
+    display: flex;
+    color: red;
+}
+
+.date.block > div {
+    display: flex;
+    width: 100%;
+}
+
+.date.block > div > div:nth-child(2) {
+        align-items: center;
+        max-width: 50px;
+        width: 70%;
+        height: 1px;
+        min-width: 24px;
+        transform-origin: left center;
+        display: inline-block;
+        background: red;
+        align-self: center;
+}
+
 
 @font-face {
     font-display: fallback;
