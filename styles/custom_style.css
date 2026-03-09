@@ -1,0 +1,42 @@
+:root {
+    --f-ferrari-font: "FerrariSans";
+}
+
+body,
+html {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #fff;
+    font-family: var(--f-ferrari-font);
+    font-size: 13px;
+    letter-spacing: .015em;
+    line-height: 1.5;
+    overflow-x: clip;
+}
+
+p {
+    margin: 16px 0;
+}
+
+@font-face {
+    font-display: fallback;
+    font-family: FerrariSans;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 400;
+    src: url("/fonts/Ferrari-SansRegular.woff2?v=1") format("woff2"),
+         url("/fonts/Ferrari-SansRegular.woff?v=1") format("woff");
+}
+
+@font-face {
+    font-display: fallback;
+    font-family: FerrariSans;
+    font-stretch: normal;
+    font-style: normal;
+    font-weight: 500;
+    src: url("/fonts/Ferrari-SansMedium.woff2?v=1") format("woff2"),
+        url("/fonts/Ferrari-SansMedium.woff?v=1") format("woff")
+}

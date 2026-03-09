@@ -1,0 +1,14 @@
+.quote-wrapper {
+    max-width: 800px !important;
+    width: 100% !important;
+    margin: 0 auto !important;
+    padding: 16px 48px !important;
+}
+
+.quote .quote-author {
+    font-weight: 500
+}
+
+.article .quote-text {
+    font-style: italic;
+}
