@@ -29,8 +29,8 @@
   padding: 16px 0;
 }
 
-.hero-article .hero-label__date,
-.hero-article .hero-label__type {
+.hero-article .hero-label-date,
+.hero-article .hero-label-type {
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -52,10 +52,10 @@
     max-width: 800px !important;
     width: 100% !important;
     margin: 0 auto !important;
-    padding: 0 48px 0 48px !important;
+    padding: 0 48px !important;
 }
 
-.f-label__separator {
+.f-label-separator {
   display: flex;
   align-items: center;
   width: 70%;
@@ -65,7 +65,7 @@
   transform-origin: left center;
 }
 
-.f-label__separator i {
+.f-label-separator i {
   display: inline-block;
   width: 100%;
   height: 100%;
