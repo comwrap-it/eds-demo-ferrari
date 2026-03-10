@@ -133,6 +133,10 @@ export default async function decorate(block) {
   const navSections = nav.querySelector('.nav-sections');
   if (navSections) {
     navSections.querySelectorAll(':scope .default-content-wrapper > ul > li').forEach((navSection) => {
+      const items = navSections.querySelectorAll(':scope .default-content-wrapper > ul > li');
+      if (items[1]) {
+        items[1].classList.add('active');
+      }
       if (navSection.querySelector('ul')) navSection.classList.add('nav-drop');
       navSection.addEventListener('click', () => {
         if (isDesktop.matches) {
