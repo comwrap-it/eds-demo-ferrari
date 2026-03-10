@@ -1,0 +1,162 @@
+.card-grid-wrapper {
+    padding: 48px !important;
+}
+
+/* Titolo sezione */
+.card-grid .card-grid-title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #1a1a1a;
+  letter-spacing: 0.2rem;
+  margin-bottom: 48px;
+}
+
+/* Slider */
+.card-grid .card-grid-slider {
+  width: 100%;
+}
+
+.card-grid .card-grid-track {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+@media (width <= 1023px) {
+  .card-grid .card-grid-track {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (width <= 639px) {
+  .card-grid .card-grid-track {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Card nascosta */
+.card-grid .card-grid-card-hidden {
+  display: none;
+}
+
+/* Card */
+.card-grid .card-grid-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Immagine */
+.card-grid .card-grid-card-image {
+  position: relative;
+  line-height: 0;
+}
+
+.card-grid .card-grid-card-image picture {
+  display: block;
+  width: 100%;
+}
+
+.card-grid .card-grid-card-image img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+
+/* Share button */
+.card-grid .card-grid-card-share {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: transparent;
+  border: none;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 8px;
+  color: white;
+}
+
+.card-grid .card-grid-card-share svg {
+  width: 100%;
+  height: 100%;
+  fill: white;
+}
+
+/* Label: date + separatore + type */
+.card-grid .card-grid-card-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-grid .card-grid-card-date,
+.card-grid .card-grid-card-type {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+    color: #da291c;
+}
+
+/* Separatore Ferrari (riuso classe già definita) */
+.f-label-separator {
+    display: flex;
+    align-items: center;
+    width: 70%;
+    max-width: 100px;
+    height: 1px;
+    min-width: 24px;
+    transform-origin: left center;
+}
+
+.f-label-separator i {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background: #da291c;
+}
+
+/* Titolo card */
+.card-grid .card-grid-card-title {
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 1.3;
+  color: #1a1a1a;
+  margin: 0;
+}
+
+/* Controlli slider */
+.card-grid .card-grid-controls {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.card-grid .card-grid-controls-prev,
+.card-grid .card-grid-controls-next {
+  background: none;
+  border: 1px solid #1a1a1a;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-grid .card-grid-controls-prev:disabled,
+.card-grid .card-grid-controls-next:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
