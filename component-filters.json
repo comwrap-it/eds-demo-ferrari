@@ -1,0 +1,25 @@
+[
+  {
+    "id": "section",
+    "components": [
+      "text",
+      "image",
+      "hero",
+      "cards",
+      "columns",
+      "fragment"
+    ]
+  },
+  {
+    "id": "texts",
+    "components": [
+      "text"
+    ]
+  },
+  {
+    "id": "images",
+    "components": [
+      "image"
+    ]
+  }
+]
