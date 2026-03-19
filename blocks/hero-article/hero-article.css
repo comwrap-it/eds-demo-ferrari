@@ -1,3 +1,9 @@
+.hero-article-wrapper {
+    padding: 0 48px !important;
+    margin: 150px auto 0 !important;
+    width: 100% !important;
+}
+
 .hero-article {
   position: relative;
   width: 100%;

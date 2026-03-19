@@ -1,4 +1,8 @@
 /* header and nav layout */
+header {
+    height: min-content;
+}
+
 header .nav-wrapper {
   z-index: 200;
   height: 40px;
