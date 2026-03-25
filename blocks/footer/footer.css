@@ -206,44 +206,62 @@
    RIGHTS
    ===================== */
 .footer-rights {
-  padding: 48px 80px;
   text-align: center;
-  border-bottom: 1px solid #333;
+  padding: 50px 25px;
+  font-size: 7px;
+  line-height: 14px;
+  color: #8f8f8f;
+  max-width: 680px;
+  margin: 0 auto;
 }
 
 .footer-rights-text {
-  color: #999;
-  font-size: 0.7rem;
-  line-height: 1.6;
-  margin: 0 auto 8px;
-  max-width: 600px;
+  text-align: center;
+  font-size: 7px;
+  line-height: 14px;
+  color: #8f8f8f;
 }
 
 /* =====================
    BOTTOM BAR
    ===================== */
 .footer-bottom {
+  background: #303030;
+  width: 100%;
+}
+
+.footer-bottom-container {
+  margin: 0 auto;
+  padding: 20px 0;
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
-  padding: 24px 80px;
-  background-color: #111;
+  align-items: center;
+  font-size: 9px;
   flex-wrap: wrap;
-  gap: 16px;
+  max-width: 1180px;
 }
 
 .footer-services {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px 24px;
-  flex: 1;
+    width: 100%;
+    padding: 16px;
+    margin: 0;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer-services-li {
+    margin: 0;
+    padding: 16px;
+    min-width: 33%;
+    text-align: center;
 }
 
 .footer-services-link {
-  color: #ccc;
-  text-decoration: none;
-  font-size: 0.75rem;
-  transition: color 0.2s;
+    background-color: transparent;
+    text-decoration: none;
+    color: #fff;
 }
 
 .footer-services-link:hover {
@@ -269,15 +287,17 @@
    LOGO PARTNER
    ===================== */
 .footer-logo-partner {
-  display: flex;
-  justify-content: center;
-  padding: 24px;
-  background-color: #111;
+      padding: 10px 0;
+      height: 48px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 }
 
 .footer-logo-partner img {
-  height: 40px;
-  width: auto;
+      position: relative;
+      display: block;
+      width: fit-content;
 }
 
 /* =====================
@@ -373,5 +393,26 @@
         min-width: 0;
         padding: 0 15px 10px;
         align-items: flex-start;
+    }
+
+    .footer-bottom-container {
+        align-items: flex-start;
+        flex-wrap: nowrap;
+    }
+
+    .footer-services {
+        flex: 1 1 auto;
+        justify-content: flex-start;
+    }
+
+    .footer-services-li {
+        min-width: auto;
+    }
+}
+
+@media (width >= 80.0625em) {
+    .footer-bottom-container {
+        padding-top: 0;
+        padding-bottom: 0;
     }
 }

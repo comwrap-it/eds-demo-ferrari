@@ -162,13 +162,20 @@ export default async function decorate(block) {
       const a = item.querySelector('a');
       const link = document.createElement('a');
       link.className = 'footer-services-link';
+
+      const liElement = document.createElement('li');
+      liElement.className = 'footer-services-li';
+
       if (a) {
         link.href = a.href;
         link.textContent = a.textContent.trim();
       } else {
         link.textContent = item.textContent.trim();
       }
-      servicesSection.append(link);
+
+      liElement.append(link);
+
+      servicesSection.append(liElement);
     });
   }
 
@@ -181,7 +188,11 @@ export default async function decorate(block) {
   countryBtn.innerHTML = `${countryText} <span class="footer-country-chevron"></span>`;
   countrySection.append(countryBtn);
 
-  bottomBar.append(servicesSection, countrySection);
+  const footerContainer = document.createElement('div');
+  footerContainer.className = 'footer-bottom-container';
+  footerContainer.append(servicesSection, countrySection);
+
+  bottomBar.append(footerContainer);
 
   // --- SEZIONE 6: LOGO PARTNER ---
   const logoSection = document.createElement('div');
