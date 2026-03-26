@@ -701,22 +701,19 @@ async function loadSections(element) {
 }
 
 function instrumentForUE(main) {
-  // Marca il main come container radice
-  main.setAttribute('data-aue-resource', 'urn:fcsconnection:/documents/index');
+  main.setAttribute('data-aue-resource', 'urn:ab:/documents/index');
   main.setAttribute('data-aue-type', 'container');
   main.setAttribute('data-aue-label', 'Page');
 
-  // Ogni section diventa un container editabile
   main.querySelectorAll(':scope > .section').forEach((section, i) => {
-    section.setAttribute('data-aue-resource', `urn:fcsconnection:/documents/index#section-${i}`);
+    section.setAttribute('data-aue-resource', `urn:ab:/documents/index#section-${i}`);
     section.setAttribute('data-aue-type', 'container');
     section.setAttribute('data-aue-label', `Section ${i + 1}`);
   });
 
-  // Ogni blocco dentro le section diventa un component
   main.querySelectorAll('.block').forEach((block) => {
     const name = block.dataset.blockName ?? block.className;
-    block.setAttribute('data-aue-resource', `urn:fcsconnection:/documents/index#${name}`);
+    block.setAttribute('data-aue-resource', `urn:ab:/documents/index#${name}`);
     block.setAttribute('data-aue-type', 'component');
     block.setAttribute('data-aue-label', name);
   });
